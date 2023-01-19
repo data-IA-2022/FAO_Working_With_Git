@@ -12,7 +12,7 @@ def grp2(dir):
     # On retire la Chine qui est en doublon
     df_population.query('Country != "China"', inplace=True)
     poptot = df_population['population'].sum() * 1000
-    print(f"Résultat Q2: {poptot}")
+    print(f"Résultat Q1: {poptot} habitants")
 def grp3(dir):
     #Group 3, réponse à la question X : calcul...
     print("Résultat Q3:...")
