@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="431cd949-9304-4f13-ad45-feb3e006c5d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/fao_git.py" beforeDir="false" afterPath="$PROJECT_DIR$/fao_git.py" afterDir="false" />
+    <list default="true" id="431cd949-9304-4f13-ad45-feb3e006c5d7" name="Changes" comment="test numéro 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,21 @@
       <option name="presentableId" value="Default" />
       <updated>1674136197203</updated>
     </task>
+    <task id="LOCAL-00001" summary="test numéro 1">
+      <created>1674138746482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674138746482</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test numéro 2">
+      <created>1674138836459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674138836459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,5 +84,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test numéro 1" />
+    <MESSAGE value="test numéro 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test numéro 2" />
   </component>
 </project>
