@@ -29,6 +29,8 @@ def question_6(aliments_df):
     dispo_mondiale_vegetaux_df_sum
     print(dispo_mondiale_vegetaux_df_sum)
 
+question_6(aliments_df)
+
 def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
