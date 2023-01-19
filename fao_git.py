@@ -54,11 +54,11 @@ def grp7(dir):
         print("\n")
         print(f"{Fore.YELLOW}-------------------------------------------------------------------------------{Style.RESET_ALL}\n")
         df_bigTab=df_bigTab.append(df)
-        pop_planetaire = df_pop['Valeur'].sum()
-        print (f"La population mondiale en 2013 est de : {pop_planetaire}")
-        df_pop = df_pop.loc[df_pop["Pays"] != "China"]
-        pop_planetaire = df_pop['Valeur'].sum()
-        print (f"La population mondiale en 2013 est de : {pop_planetaire}")
+    pop_planetaire = df_pop['Valeur'].sum()
+    print (f"La population mondiale en 2013 est de : {pop_planetaire}")
+    df_pop = df_pop.loc[df_pop["Pays"] != "China"]
+    pop_planetaire = df_pop['Valeur'].sum()
+    print (f"La population mondiale en 2013 est de : {pop_planetaire}")
 
 
 #..................................
