@@ -20,6 +20,8 @@ def grp5(dir):
 
 def question_6(aliments_df):
     #Group 6, réponse à la question X : calcul...
+    print("Résultat Q6:...")
+
     aliments_df.drop(aliments_df[aliments_df['Pays'] == 'Chine'].index, inplace=True)
     aliments_df["dispo_interieure_alimentaire_kg"] = aliments_df["Disponibilité intérieure"]*1000000
     aliments_df["dispo_interieure_alimentaire_kcal"] = aliments_df["dispo_interieure_alimentaire_kg"]*aliments_df["ratio_kcal/kg"]
@@ -30,13 +32,18 @@ def question_6(aliments_df):
     print(dispo_mondiale_vegetaux_df_sum)
 
 question_6(aliments_df)
-
 def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
 
 #..................................
+def grpMaud_Lorenzo(dir):
+    #Group 7, réponse à la question X : calcul...
+    print("Résultat Q7:...")
+
+
 
 print("Projet commun")
 dir='fao_2013'
-grp1('dir')
+grp1(dir)
+lorenzo(dir)
