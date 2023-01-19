@@ -29,6 +29,7 @@ def grp7(dir):
 def test_maud():
     print('I did it !!!!')
     print('or didI ??')
+    print('Guess I finally did')
 #..................................
 
 print("Projet commun")
