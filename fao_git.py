@@ -26,9 +26,12 @@ def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
 
-
+def lorenzo():
+    #Group 7, réponse à la question X : calcul...
+    print("Résultat Q7:...")
 #..................................
 
 print("Projet commun")
 dir='fao_2013'
-grp1('dir')
+grp1(dir)
+lorenzo(dir)
