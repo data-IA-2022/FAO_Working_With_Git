@@ -31,4 +31,4 @@ def grp7(dir):
 
 print("Projet commun")
 dir='fao_2013'
-grp1('dir') 
+grp1('dir')
