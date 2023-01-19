@@ -29,6 +29,7 @@ def grp7(dir):
     import pandas as pd
     import os
     import glob
+    from colorama import Fore, Back, Style
     #----------------------------- Récupération des fichier dans un dataframe -----------------------------------------
     fns=glob.glob('fao_2013/*.csv', recursive=True)
 
