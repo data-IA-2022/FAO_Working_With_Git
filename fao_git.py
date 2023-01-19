@@ -1,5 +1,5 @@
 import pandas as pd
-#trolol
+#trolol23
 def grp1(dir):
     #Group 1, réponse à la question X : calcul...
     print("Résultat Q1:...")
