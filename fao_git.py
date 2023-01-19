@@ -26,6 +26,9 @@ def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
 
+def grpMaud_Lorenzo(dir):
+    #Group 7, réponse à la question X : calcul...
+    print("Résultat Q7:...")
 
 #..................................
 
