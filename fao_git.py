@@ -29,7 +29,7 @@ def grp7(dir):
 def lorenzo():
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
-    a
+    
 #..................................
 
 print("Projet commun")
