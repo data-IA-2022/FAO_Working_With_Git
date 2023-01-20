@@ -1,4 +1,4 @@
-import pandas as pd
+from demoPOO import Exercice
 
 def grp1(dir):
     #Group 1, réponse à la question X : calcul...
@@ -32,3 +32,8 @@ def grp7(dir):
 print("Projet commun")
 dir='fao_2013'
 grp1('dir')
+
+# Execution avec demoPOO
+#obj = demoPOO.Exercice()
+obj = Exercice()
+obj.réponse()
