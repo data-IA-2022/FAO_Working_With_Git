@@ -4,8 +4,11 @@ def grp1(dir):
     #Group 1, réponse à la question X : calcul...
     print("Résultat Q1:...")
 def grp2(dir):
-    #Group 2, réponse à la question X : calcul...
-    print("Résultat Q2:...")
+    df_population = pd.read_csv(dir+'/FAOSTAT_2013_population.csv')
+    # On retire la Chine qui est en doublon
+    df_population.query('Country != "China"', inplace=True)
+    poptot = df_population['population'].sum() * 1000
+    print(f"Résultat Q1:\nEn 2013, la population mondiale s'élevait à {poptot} habitants.")   
 def grp3(dir):
     #Group 3, réponse à la question X : calcul...
     print("Résultat Q3:...")
