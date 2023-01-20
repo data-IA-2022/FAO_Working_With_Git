@@ -1,0 +1,208 @@
+Index: fao_git.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\n# my branch Fengfeng\r\ndef grp1(dir):\r\n    #Group 1, réponse à la question X : calcul...\r\n    print(\"Résultat Q1:...\")\r\ndef grp2(dir):\r\n    #Group 2, réponse à la question X : calcul...\r\n    print(\"Résultat Q2:...\")\r\ndef grp3(dir):\r\n    #Group 3, réponse à la question X : calcul...\r\n    print(\"Résultat Q3:...\")\r\n\r\ndef grp4(dir):\r\n    #Group 4, réponse à la question X : calcul...\r\n    print(\"Résultat Q4:...\")\r\n\r\ndef grp5(dir):\r\n    #Group 5, réponse à la question X : calcul...\r\n    print(\"Résultat Q5:...\")\r\n\r\ndef grp6(dir):\r\n    #Group 6, réponse à la question X : calcul...\r\n    print(\"Résultat Q6:...\")\r\n\r\ndef grp7(dir):\r\n    #Group 7, réponse à la question X : calcul...\r\n    print(\"Résultat Q7:...\")\r\n\r\n\r\n#..................................\r\n\r\nprint(\"Projet commun\")\r\ndir='fao_2013'\r\ngrp1('dir')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/fao_git.py b/fao_git.py
+--- a/fao_git.py	(revision d3c1645236eef7c43b04adaf3100852311042a47)
++++ b/fao_git.py	(date 1674222481482)
+@@ -1,5 +1,25 @@
++#importation des librairies python
++import os
+ import pandas as pd
+-# my branch Fengfeng
++import glob
++import itertools
++import numpy as np
++import os
++current_dir = os.path.abspath(os.getcwd())
++# Ma réponse à la question 1
++
++# Récupération des chemin vers les fichiers csv
++csv_path = f'{current_dir}\\FAO_Git\\fao_2013\\'
++def find_csv_filenames(path_to_dir=os.getcwd(), extension="csv"):
++    filenames = []
++    for name in glob.glob(f'{path_to_dir}/*.{extension}'):
++        filenames.append(name)
++    return filenames
++all_csv_files= find_csv_filenames(path_to_dir=csv_path)
++print(all_csv_files)
++
++
++
+ def grp1(dir):
+     #Group 1, réponse à la question X : calcul...
+     print("Résultat Q1:...")
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1674136198264)
++++ b/.idea/modules.xml	(date 1674136198264)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/FAO_Git.iml" filepath="$PROJECT_DIR$/FAO_Git.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"431cd949-9304-4f13-ad45-feb3e006c5d7\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/FAO_Git.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/fao_git.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2KY0QSjbQjXKGRiGmpFxr0E9LOa\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"431cd949-9304-4f13-ad45-feb3e006c5d7\" name=\"Changes\" comment=\"\" />\r\n      <created>1674136197203</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1674136197203</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d3c1645236eef7c43b04adaf3100852311042a47)
++++ b/.idea/workspace.xml	(date 1674222254608)
+@@ -4,13 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="431cd949-9304-4f13-ad45-feb3e006c5d7" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="431cd949-9304-4f13-ad45-feb3e006c5d7" name="Changes" comment="premier commit">
+       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/FAO_Git.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/fao_git.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/FAO_Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FAO_Git.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/fao_git.py" beforeDir="false" afterPath="$PROJECT_DIR$/fao_git.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -21,11 +19,31 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Python Script" />
++        <option value="Freeze Requirements File" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="tarik_code" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="c1e6aa5c-8c1b-4bd6-9f33-51ed094ea98d" />
++        <option name="url" value="https://github.com/data-IA-2022/FAO_Working_With_Git.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -36,12 +54,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/tarik/OneDrive/Documents/Formation Dév IA&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\tarik\OneDrive\Documents\Formation Dév IA" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -51,6 +79,41 @@
+       <option name="presentableId" value="Default" />
+       <updated>1674136197203</updated>
+     </task>
++    <task id="LOCAL-00001" summary="premier commit">
++      <created>1674136999124</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1674136999124</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/tarik_code" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="premier commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="premier commit" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: FAO_Git.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (FAO_Git) (2)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/FAO_Git.iml b/FAO_Git.iml
+--- a/FAO_Git.iml	(revision d3c1645236eef7c43b04adaf3100852311042a47)
++++ b/FAO_Git.iml	(date 1674143205027)
+@@ -3,7 +3,7 @@
+   <component name="NewModuleRootManager" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.7 (FAO_Git) (2)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
