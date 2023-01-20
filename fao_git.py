@@ -1,4 +1,4 @@
-import pandas as pd
+from demoPOO import Exercice
 
 def grp1(dir):
     #Group 1, réponse à la question X : calcul...
@@ -8,7 +8,7 @@ def grp2(dir):
     # On retire la Chine qui est en doublon
     df_population.query('Country != "China"', inplace=True)
     poptot = df_population['population'].sum() * 1000
-    print(f"Résultat Q1:\nEn 2013, la population mondiale s'élevait à {poptot} habitants.")   
+    print(f"Résultat Q1:\nEn 2013, la population mondiale s'élevait à {poptot} habitants.")
 def grp3(dir):
     #Group 3, réponse à la question X : calcul...
     print("Résultat Q3:...")
@@ -39,6 +39,7 @@ def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     print("Résultat Q7:...")
 
+
 #..................................
 def grpMaud_Lorenzo(dir):
     #Group 7, réponse à la question X : calcul...
@@ -48,5 +49,12 @@ def grpMaud_Lorenzo(dir):
 
 print("Projet commun")
 dir='fao_2013'
+grp1('dir')
+
+# Execution avec demoPOO
+#obj = demoPOO.Exercice()
+obj = Exercice()
+obj.réponse()
+
 grp1(dir)
 lorenzo(dir)
