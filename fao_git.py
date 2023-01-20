@@ -26,7 +26,6 @@ def grp6(dir):
 def grp7(dir):
     #Group 7, réponse à la question X : calcul...
     #--------------------------------- Nombre d'humains sur la planète (question 1)------------------------------------
-    import pandas as pd
     import os
     import glob
     from colorama import Fore, Back, Style
