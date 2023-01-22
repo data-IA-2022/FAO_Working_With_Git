@@ -29,7 +29,6 @@ def question_6(aliments_df):
     obj = POO-Q6.exercice_6()
     obj.réponse_6()
 
-
     aliments_df.drop(aliments_df[aliments_df['Pays'] == 'Chine'].index, inplace=True)
     aliments_df["dispo_interieure_alimentaire_kg"] = aliments_df["Disponibilité intérieure"]*1000000
     aliments_df["dispo_interieure_alimentaire_kcal"] = aliments_df["dispo_interieure_alimentaire_kg"]*aliments_df["ratio_kcal/kg"]
