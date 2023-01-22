@@ -39,6 +39,7 @@ def question_6(aliments_df):
     dispo_mondiale_vegetaux_df_sum
     print(dispo_mondiale_vegetaux_df_sum)
 
+
 question_6(aliments_df)
 def grp7(dir):
     #Group 7, réponse à la question X : calcul...
@@ -54,5 +55,12 @@ def grpMaud_Lorenzo(dir):
 
 print("Projet commun")
 dir='fao_2013'
+grp1('dir')
+
+# Execution avec demoPOO
+#obj = demoPOO.Exercice()
+obj = Exercice()
+obj.réponse()
+
 grp1(dir)
 lorenzo(dir)
